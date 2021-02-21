@@ -1,0 +1,13 @@
+{
+  "appId": "org.chri659y.remote",
+  "appName": "remote-controller-app",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
