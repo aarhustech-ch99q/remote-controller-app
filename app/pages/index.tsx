@@ -17,7 +17,8 @@ export default function Home() {
   useEffect(() => {
     Geolocation.getCurrentPosition().then(setCoordinate);
 
-    Geolocation.watchPosition({ enableHighAccuracy: true }, (position, err) => {
+    Geolocation.watchPosition({}, (position, err) => {
+      if (err) console.error(err);
       setCoordinate(position);
     });
 
@@ -67,7 +68,7 @@ export default function Home() {
       />
 
       <p>Coordinates on your phone:</p>
-      <p>{coordinate}</p>
+      <p>{coordinate?.coords?.longitude}, {coordinate?.coords?.latitude}</p>
     </div>
   );
 }

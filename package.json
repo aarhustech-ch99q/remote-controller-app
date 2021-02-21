@@ -8,7 +8,8 @@
   "scripts": {
     "install": "cd app && yarn",
     "dev": "cd app && yarn dev",
-    "build": "cd app && yarn export"
+    "build": "cd app && yarn export",
+    "sync": "npx cap sync"
   },
   "dependencies": {
     "@capacitor/cli": "^2.4.6",
