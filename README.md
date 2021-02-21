@@ -40,5 +40,9 @@ Andre svagpunkter en mobil kan have via apps, kan være falske update servere p�
 Funktionaliteten på en app kan testes via en integrations test og unit test for backend funktioner (typisk utility funktioner når vi taler apps).
 Den bedste løsning for en app som benytter sig af web view er ved brug af integrations tests, da man kan predefinere hvad resultat man ønsker for et interface og hvad resultat knapper giver osv, denne part tester dog ikke om appen faktisk taler med databaser osv, der kan man benytte sig af unit test for connection testing til database. Ved produktion er den bedste løsning dog at have en exception logger i sin app så man kan modtage eller fejl som brugerne oplever i produktion, godt produkt her er fx [sentry](https://sentry.io/)
 
+# Preview Video
+
+https://youtu.be/wM-qQVkGWh8
+
 ---
 Aflevering af Christian William Hansen (chri659y) 21/02-2021
